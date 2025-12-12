@@ -51,22 +51,19 @@ CBIR--EquipoC/
 │
 ├── main.py            # Archivo principal de ejecución
 └── requirements.txt
-'''
+```
 
 ## 🚀 Ejecución del Proyecto
-
-Sigue estos pasos estrictamente en orden para procesar los datos e iniciar la aplicación.
 
 ### 1. Extracción de Características e Indexado
 
 Antes de poder buscar imágenes, el sistema necesita "aprender" y catalogar el dataset.
 
-1.  Abre y ejecuta todas las celdas del notebook **`images_extractor.ipynb`**.
+1.  Abre y ejecuta todas las celdas del notebook **`./Source/images_extractor.ipynb`**.
 2.  Este script procesará las imágenes y guardará los índices vectoriales de FAISS en el directorio `./Data/Feature/`.
 
-El sistema generará índices independientes para cada uno de los siguientes descriptores/modelos:
-* **Deep Learning:** VGG16, ResNet50, InceptionV3.
-* **Computer Vision Clásica:** Histograma RGB, LBP (Local Binary Patterns).
+El sistema generará índices independientes para cada uno de los siguientes modelos:
+* VGG16, ResNet50, InceptionV3. Histograma RGB y LBP (Local Binary Patterns).
 
 > ⏳ **Nota:** Dependiendo de tu hardware (CPU vs GPU) y del tamaño del dataset, este proceso puede tardar varios minutos.
 
@@ -76,3 +73,6 @@ Una vez que los archivos de características se han generado, puedes iniciar la 
 
 ```bash
 streamlit run main.py
+```
+
+# Nota: Se puede congifurar algunos parametros en images_extractor (batch, cantidad_por_clase)

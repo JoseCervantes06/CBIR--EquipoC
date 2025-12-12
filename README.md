@@ -79,4 +79,4 @@ Una vez que los archivos de características se han generado, puedes iniciar la 
 streamlit run main.py
 ```
 
-> **Nota:** Dependiendo de tu hardware (CPU vs GPU) y del tamaño del dataset, este proceso puede tardar varios minutos.
+> **Nota:** Se puedes modificar algunos parametros de images_extractor (batch, cantidad_por_clase)

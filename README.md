@@ -1,6 +1,10 @@
 # CBIR--EquipoC
 
-... (Descripción y Contenido Principal) ...
+## Introducción
+
+Este proyecto aborda el problema de la **Recuperación de Imágenes Basada en Contenido (CBIR)**. El sistema utiliza algoritmos de indexación y búsqueda eficiente mediante la librería **FAISS** (Facebook AI Similarity Search).
+
+El objetivo es combinar y evaluar simultáneamente múltiples métodos de extracción de características para comparar su precisión y rendimiento
 
 ## 🛠️ Entorno de ejecución 
 
@@ -63,9 +67,9 @@ Antes de poder buscar imágenes, el sistema necesita "aprender" y catalogar el d
 2.  Este script procesará las imágenes y guardará los índices vectoriales de FAISS en el directorio `./Data/Feature/`.
 
 El sistema generará índices independientes para cada uno de los siguientes modelos:
-* VGG16, ResNet50, InceptionV3. Histograma RGB y LBP (Local Binary Patterns).
+* VGG16, ResNet50, InceptionV3, Histograma RGB y LBP (Local Binary Patterns).
 
-> ⏳ **Nota:** Dependiendo de tu hardware (CPU vs GPU) y del tamaño del dataset, este proceso puede tardar varios minutos.
+> **Nota:** Dependiendo de tu hardware (CPU vs GPU) y del tamaño del dataset, este proceso puede tardar varios minutos.
 
 ### 2. Iniciar la Interfaz de Usuario
 
@@ -75,4 +79,4 @@ Una vez que los archivos de características se han generado, puedes iniciar la 
 streamlit run main.py
 ```
 
-# Nota: Se puede congifurar algunos parametros en images_extractor (batch, cantidad_por_clase)
+> **Nota:** Dependiendo de tu hardware (CPU vs GPU) y del tamaño del dataset, este proceso puede tardar varios minutos.

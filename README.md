@@ -6,6 +6,8 @@ Este proyecto aborda el problema de la **Recuperación de Imágenes Basada en Co
 
 El objetivo es combinar y evaluar simultáneamente múltiples métodos de extracción de características para comparar su precisión y rendimiento
 
+![Diagrama de arquitectura del sistema CBIR](Arquitectura_CBIR.png)
+
 ## 🛠️ Entorno de ejecución 
 
 Para clonar, instalar y ejecutar este proyecto correctamente, necesitarás las siguientes herramientas y dependencias:
